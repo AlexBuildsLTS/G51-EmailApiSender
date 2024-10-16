@@ -1,4 +1,4 @@
-package se.alex.lexicon.g51emailapi.Config;
+package se.alex.lexicon.g51emailapi.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,7 +11,7 @@ import java.util.Properties;
 public class MailConfig {
 
     @Bean
-    public JavaMailSender javaMailSender( ) {
+    public JavaMailSender javaMailSender() {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
         mailSender.setHost("smtp.example.com");
         mailSender.setPort(587);
