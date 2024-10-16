@@ -5,17 +5,16 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 
 
-
 @Configuration
 public class JavaMailSender {
 
     @Bean
-    public org.springframework.mail.javamail.JavaMailSender javaMailSender() {
+    public org.springframework.mail.javamail.JavaMailSender javaMailSender( ) {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-        return getJavaMailSender( mailSender );
+        return getJavaMailSender(mailSender);
     }
 
-    public org.springframework.mail.javamail.JavaMailSender getJavaMailSender ( JavaMailSenderImpl mailSender ) {
+    public org.springframework.mail.javamail.JavaMailSender getJavaMailSender(JavaMailSenderImpl mailSender) {
         return null;
     }
 }

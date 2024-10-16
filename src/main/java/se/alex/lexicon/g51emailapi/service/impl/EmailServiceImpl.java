@@ -26,12 +26,12 @@ public class EmailServiceImpl implements EmailService {
 
 
     @Override
-    public Email createEmail ( EmailDTO emailDTO ) {
+    public Email createEmail(EmailDTO emailDTO) {
         return null;
     }
 
     @Override
-    public List<Email> getAllEmails() {
+    public List<Email> getAllEmails( ) {
         return emailRepository.findAll();
     }
 

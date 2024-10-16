@@ -5,9 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import se.alex.lexicon.g51emailapi.service.EmailService;
 import se.alex.lexicon.g51emailapi.domain.Email;
 import se.alex.lexicon.g51emailapi.dto.EmailDTO;
+import se.alex.lexicon.g51emailapi.service.EmailService;
 
 import java.util.List;
 
@@ -29,8 +29,8 @@ public class EmailController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Email>> getAllEmails() {
-        List< Email > emails = emailService.getAllEmails();
+    public ResponseEntity<List<Email>> getAllEmails( ) {
+        List<Email> emails = emailService.getAllEmails();
         return ResponseEntity.ok(emails);
     }
 
