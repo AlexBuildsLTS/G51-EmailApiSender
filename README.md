@@ -16,21 +16,24 @@ This project is a simple RESTful email management API built using **Spring Boot*
 
 
 g51-email-api/
+
+
 ├── src/
-│├── main/
-│   │   ├── java/se/alex/lexicon/g51emailapi/
-│   │   │   ├── config/            # Configurations for the mail setup and security.
-│   │   │   ├── controller/        # REST API controllers (handles HTTP requests).
-│   │   │   ├── domain/            # Entity classes (Email, User, etc.).
-│   │   │   ├── dto/               # Data transfer objects to simplify interactions between layers.
-│   │   │   ├── repository/        # Interfaces for database access using Spring Data JPA.
-│   │   │   ├── service/           # Business logic related to email operations.
-│   │   │   └── util/              # Utility classes for email and security.
-│   ├── resources/
-│   │   ├── application.properties # Application-level configurations (DB, mail, etc.)
-│   └── test/
-│       └── ...                    # Unit tests (to be implemented).
-└── pom.xml                         # Project dependencies and build configuration.
+
+- │├── main/
+- │   │   ├── java/se/alex/lexicon/g51emailapi/
+- │   │   │   ├── config/            # Configurations for the mail setup and security.
+- │   │   │   ├── controller/        # REST API controllers (handles HTTP requests).
+- │   │   │   ├── domain/            # Entity classes (Email, User, etc.).
+-  │   │   │   ├── dto/               # Data transfer objects to simplify interactions between layers
+-    │   │   │   ├── repository/        # Interfaces for database access using Spring Data JPA.
+- │   │   │   ├── service/           # Business logic related to email operations.
+- │   │   │   └── util/              # Utility classes for email and security.
+- │   ├── resources/
+- │   │   ├── application.properties # Application-level configurations (DB, mail, etc.)
+ -│   └── test/
+- │       └── ...                    # Unit tests (to be implemented).
+- └── pom.xml                         # Project dependencies and build configuration.
 
 
 
